@@ -4,18 +4,8 @@ import random
 import argparse
 
 def disassemble_with_labels(code_bytes,arch):
-    """
-    Disassemble x86 code bytes and add branch labels for jump targets
-    
-    Args:
-        code_bytes: Bytes object containing the machine code
-        base_address: Base address for the disassembly (default: 0)
-    
-    Returns:
-        String containing disassembled code with branch labels
-    """
     base_address=0
-    # Initialize disassembler for x86 32-bit
+    
     if arch=="x64":
         md = Cs(CS_ARCH_X86, CS_MODE_64)
     elif arch=="x86":

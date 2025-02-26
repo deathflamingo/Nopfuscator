@@ -17,7 +17,7 @@ This tool allows for disassembling x86/x64 shellcode, inserting NOP-equivalent i
 ### Command-line Arguments
 
 ```
-usage: script.py -i INPUT [-o OUTPUT] (-sf SF | -vfs VFS -vfe VFE) -a ARCHITECTURE [--random] [--show]
+usage: nopfuscator.py -i INPUT [-o OUTPUT] (-sf SF | -vfs VFS -vfe VFE) -a ARCHITECTURE [--random] [--show]
 ```
 
 |Argument|Description|
